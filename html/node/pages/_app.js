@@ -1,8 +1,17 @@
-// import '../styles/globals.css'
-import 'tailwindcss/tailwind.css'
+import Head from 'next/head';
+
+import '../styles/globals.css'
+import { Header } from "../components";
+
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+    <Head></Head>
+    <Header/>
+    <Component {...pageProps} />
+    </>
+  )
 }
 
-export default MyApp
+export default MyApp;
