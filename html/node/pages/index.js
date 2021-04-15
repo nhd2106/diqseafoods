@@ -1,10 +1,11 @@
 import Head from "next/head";
+import { Carousel } from '../components';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>DIQ Seafoods</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -13,6 +14,7 @@ export default function Home() {
           crossOrigin="anonymous"
         ></link>
       </Head>
+      <Carousel/>
 
     </div>
   );
