@@ -1,6 +1,6 @@
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-import styles from "./Carousel.module.scss";
+import styles from "../Styles.module.scss";
 import "react-awesome-slider/dist/styles.css";
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
