@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import '../styles/globals.css'
+import '../styles/styles.scss'
 import { Header } from "../components";
 import 'tailwindcss/tailwind.css'
 

@@ -15,7 +15,15 @@ export default function Home() {
         ></link>
       </Head>
       <Carousel/>
-
+      <div>
+        <div className="bg-features grid-rows-4 my-6">
+          <div>
+            <div className="bg-feature-1 w-1/4">
+                  ksjhdsdh
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
