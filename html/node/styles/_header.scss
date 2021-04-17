@@ -1,0 +1,14 @@
+
+.main-head {
+    background-color: $backgroud-2;
+    color: white;
+}
+.upper-logo {
+    @include flex(center, center, row);
+    min-height: 10vh;
+}
+.nav-links {
+    @include flex(space-between, center, row);
+    @include container;
+}
+

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Carousel } from '../components';
+import { Carousel, Welcome } from "../components";
 
 export default function Home() {
   return (
@@ -14,16 +14,8 @@ export default function Home() {
           crossOrigin="anonymous"
         ></link>
       </Head>
-      <Carousel/>
-      <div>
-        <div className="bg-features grid-rows-4 my-6">
-          <div>
-            <div className="bg-feature-1 w-1/4">
-                  ksjhdsdh
-            </div>
-          </div>
-        </div>
-      </div>
+      <Carousel />
+      <Welcome/>
     </div>
   );
 }

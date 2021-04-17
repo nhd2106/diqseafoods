@@ -1,0 +1,93 @@
+
+$header1: calc(2rem + 1vw);
+$header2: calc(3.5rem + 1vw);
+$header3: calc(3rem + 1vw);
+$header4: calc(2.4rem + 1vw);
+$text: calc(1.6rem + 0.5vw);
+$big: calc(6rem + 1vw);
+$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$background-color: #154353;
+$gray-text: #2c2c2c;
+$blue-text: #2B6CA3;
+$backgroud-1: #105485;
+$backgroud-2: #2B6CA3;
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.6rem + 0.5vw);
+  --big: calc(6rem + 1vw);
+  --special-color: #906272;
+  --background-color: #414141;
+  --gray-text: #525252;
+  scroll-behavior: smooth;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: $header1 !important;
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text;
+}
+h2 {
+  font-size: $header2 !important;
+}
+h3 {
+  font-size: $header3 !important;
+}
+h4,
+h5 {
+  font-size: $header4 !important;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  color: black;
+  &:hover {
+    color: unset;
+  }
+}
+i, span {
+    font-size: 1.6rem;
+}
+
+.awssld__bullets .awssld__bullets--active {
+  background-color: white;
+}
+.awssld__bullets button {
+  width: 9px;
+  height: 9px;
+}
+.awssld__bullets .awssld__bullets--active {
+  background-color: white !important;
+}
+
+.awssld__bullets {
+  bottom: 10px!important;
+}
