@@ -1,14 +1,76 @@
-
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 .main-head {
     background-color: $backgroud-2;
-    color: white;
+  
+  color: white;
 }
 .upper-logo {
-    @include flex(center, center, row);
-    min-height: 10vh;
+  @include flex(center, center, row);
+  min-height: 10vh;
+  background-color: white
 }
 .nav-links {
-    @include flex(space-between, center, row);
-    @include container;
+  @include flex(space-between, center, row);
+  @include container;
 }
 
+@media (max-width: 600px) {
+  .upper-logo {
+    .content {
+      @include flex(space-between, center, row);
+      @include container;
+    }
+  }
+  .burger {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .burger span {
+    padding: 0.1rem 1rem;
+    background: var(--gray-text);
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+  .nav-links a {
+    color: white;
+    // font-size: var(--header1);
+    text-decoration: none;
+  }
+  .nav-links {
+    background: $backgroud-2;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    padding: 5rem;
+    top: 0;
+    left: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: unset;
+    transition: transform 0.5s ease;
+    z-index: 100;
+  }
+
+  .nav-open {
+    transform: translateX(-100%);
+  }
+
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(500%);
+    background: white;
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-500%);
+    background: white;
+  }
+}

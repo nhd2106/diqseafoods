@@ -23,7 +23,7 @@ body {
   --header2: calc(3.5rem + 1vw);
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
-  --text: calc(1.6rem + 0.5vw);
+  --text: calc(1.6rem );
   --big: calc(6rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
@@ -81,8 +81,8 @@ i, span {
   background-color: white;
 }
 .awssld__bullets button {
-  width: 9px;
-  height: 9px;
+  width: 1rem !important;
+  height: 1rem !important;
 }
 .awssld__bullets .awssld__bullets--active {
   background-color: white !important;

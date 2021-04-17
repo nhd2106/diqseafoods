@@ -5,14 +5,14 @@ function Footer(props) {
     <>
       <footer className="footer">
         <div className="footer__content">
-          <div className="footer__logo">
+          <div className="footer__logo item">
             <h3>Logo DIQ</h3>
           </div>
-          <div className="footer__name">
+          <div className="footer__name item">
             <h4>Diem Quynh Seafoods</h4>
             <p>© 2021 All Rights Reversed</p>
           </div>
-          <div className="footer__contacts">
+          <div className="footer__contacts item">
               <div className="info">
                 <div className="phone">
                 <i class="fa fa-phone" aria-hidden="true"></i><span>info@diemquynhseafoods.com</span>

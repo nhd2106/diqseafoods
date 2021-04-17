@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 
-export default function Index(props) {
+export default function Index({open}) {
   const navRef = useRef();
-  const [navOpen, setNavOpen] = useState("");
+  const [navOpen, setNavOpen] = useState(open);
   const [burger, setBugger] = useState("");
   const handleClick = () => {
     setNavOpen((prev) => (!prev ? "nav-open" : ""));
@@ -11,7 +11,7 @@ export default function Index(props) {
 
   return (
     <>
-      <header>
+      <header className="header">
         {/* <nav ref={navRef} className="flex items-center w-11/12 m-auto">
             <h1 id="logo" className="flex-1">DIQ Seafoods</h1>
             <ul className={`nav-links flex items-center justify-around flex-1 ${navOpen}`}>
@@ -26,7 +26,14 @@ export default function Index(props) {
             </div>
         </nav> */}
         <div className="upper-logo">
+          <div className="content">
           <h1>DIQ Seafoods</h1>
+          <div className={`burger ${burger}`} onClick={handleClick}>
+                <span className="line1"></span>
+                <span className="line2"></span>
+                <span className="line3"></span>
+          </div>
+          </div>
         </div>
         <nav className="main-head">
           <ul

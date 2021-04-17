@@ -19,8 +19,24 @@ function Welcome(props) {
             <div> <h3>Our Products</h3></div>
             <div className='items'>
                 <div className="item">
-                    <img className="item__image" src="/items"/>
+                    <img className="item__image" src="/item1.jpeg"/>
                 </div>
+                <div className="item">
+                    <img className="item__image" src="/item1.jpeg"/>
+                </div>
+                <div className="item">
+                    <img className="item__image" src="/item1.jpeg"/>
+                </div>
+                <div className="item">
+                    <img className="item__image" src="/item1.jpeg"/>
+                </div>
+                <div className="item">
+                    <img className="item__image" src="/item1.jpeg"/>
+                </div>
+                <div className="item">
+                    <img className="item__image" src="/item1.jpeg"/>
+                </div>
+                
             </div>
       </div>
     </div>
