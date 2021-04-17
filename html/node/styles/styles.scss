@@ -20,11 +20,16 @@
   box-shadow: none;
   outline: none;
   border-radius: 50% 50%;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 5rem;
+  width: 5rem;
   min-width: unset;
   background-color: $backgroud-1;
   color: white;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+
+  }
 }
 
 //------------------------Home---------------------------

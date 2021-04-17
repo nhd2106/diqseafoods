@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://diemquynhseafoods.com
+
+# Sitemaps
+Sitemap: https://diemquynhseafoods.com/sitemap.xml
