@@ -15,16 +15,17 @@
 
 .toTopButton {
   position: fixed;
-  bottom: 14%;
+  bottom: 9%;
   right: 2rem;
   box-shadow: none;
   outline: none;
   border-radius: 50% 50%;
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   min-width: unset;
   background-color: $backgroud-1;
   color: white;
+  border: none;
   &:focus{
     outline: none;
     box-shadow: none;
@@ -52,8 +53,16 @@
     }
     .item {
       cursor: pointer;
+      @include flex(center, center, column);
+      width: 100%;
     }
   }
+  .item {
+    img {
+      width: 100%;
+    }
+  }
+  
 }
 
 //------------------------Footer---------------------------
@@ -94,8 +103,7 @@
     .welcome__products {
       .items {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
       }
       .item {
         cursor: pointer;
