@@ -4,7 +4,6 @@ import { DefaultSeo } from "next-seo";
 
 import '../styles/styles.scss';
 import { Header, Footer } from "../components";
-import 'tailwindcss/tailwind.css';
 
 import SEO from "../next-seo.config";
 
